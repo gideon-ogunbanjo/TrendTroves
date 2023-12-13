@@ -28,14 +28,14 @@ def load_saved_artifacts():
     global __data_columns
     global __locations
     
-    with open("/Users/gideonogunbanjo/Documents/TrendTroves/Server/artifcats/columns.json", "r") as f: 
+    with open("Server/artifcats/columns.jsonn", "r") as f: 
         data_columns = json.load(f)['data_columns']
         __data_columns = data_columns[3:] 
         __locations = __data_columns 
         
     global __model
     if __model is None:
-        with open('/Users/gideonogunbanjo/Documents/TrendTroves/Server/artifcats/model.pkl', 'rb') as f: 
+        with open('Server/artifcats/model.pkl', 'rb') as f: 
             __model = pkl.load(f)
     print("Loading saved artifacts...done")
 
