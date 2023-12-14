@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Loading the model
-model = pkl.load(open('App/model.pkl', 'rb'))
+model = jbl.load('App/model.joblib')
     
     
 # Loading column information
