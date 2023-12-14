@@ -13,12 +13,7 @@ st.set_page_config(
 )
 
 # Loading the model
-model_file = 'App/model.pkl'
-if os.path.exists(model_file):
-    with open(model_file, 'rb') as file:
-        model = pkl.load(file)
-else:
-    print(f"Error: File {model_file} not found.")
+model = pkl.load(open('./App/model.pkl', 'rb'))
     
     
 # Loading column information
