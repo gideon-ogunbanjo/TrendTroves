@@ -1,6 +1,6 @@
 # TrendTroves - House Price Prediction Model
 ### Overview:
-This project implements a machine learning model for predicting house prices based on various features. The model is deployed using a Flask server, allowing users to interact with it through a web interface.
+This project implements a machine learning model for predicting house prices in India based on various features. The model is deployed using a Flask server, allowing users to interact with it through a web interface.
 
 ### Technologies Used:
 1. Flask: Used as the backend server to host the machine learning model and handle user requests.
@@ -26,7 +26,7 @@ This project implements a machine learning model for predicting house prices bas
 - Bedrooms: Choose the number of bedrooms.
 - Bathrooms: Choose the number of bathrooms.
 - Location: Select the location from the dropdown.
-- Click the "Estimate Price" button to see the predicted house price.
+- Click the "Predict Price" button to see the predicted house price.
 
 ### Creator:
 Gideon Ogunbanjo
