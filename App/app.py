@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # Loading the model
-model = pkl.load(open('./App/model.pkl', 'rb'))
+model = pkl.load(open('App/model.pkl', 'rb'))
     
     
 # Loading column information
@@ -60,6 +60,9 @@ def main():
             result = predict_price(location, sqft, bath, bedrooms)
             if result is not None:
                 st.success(f'Predicted Price: ₹{result:.2f} Lakhs')
+                
+    created_by_link = 'Created by [Gideon Ogunbanjo](https://gideonogunbanjo.netlify.app)'
+    st.markdown(created_by_link, unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
