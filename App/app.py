@@ -2,7 +2,6 @@
 import numpy as np
 import streamlit as st
 import pickle as pkl
-import PIL
 import joblib as jbl
 import json
 
