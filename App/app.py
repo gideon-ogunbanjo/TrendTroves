@@ -4,6 +4,7 @@ import streamlit as st
 import pickle as pkl
 import joblib as jbl
 import json
+import os
 
 st.set_page_config(
     layout = 'centered',
@@ -13,9 +14,13 @@ st.set_page_config(
 
 # Loading the model
 model_file = 'App/model.pkl'
-with open(model_file, 'rb') as file:
-    model = pkl.load(file)
-
+if os.path.exists(model_file):
+    with open(model_file, 'rb') as file:
+        model = pkl.load(file)
+else:
+    print(f"Error: File {model_file} not found.")
+    
+    
 # Loading column information
 columns_file = 'App/columns.json'
 try:
