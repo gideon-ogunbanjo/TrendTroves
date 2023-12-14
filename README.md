@@ -7,6 +7,7 @@ This project implements a machine learning model for predicting house prices bas
 2. HTML/CSS/JavaScript: Used for the frontend to create a user-friendly interface for interacting with the model.
 3. jQuery: JavaScript library used for simplifying AJAX requests.
 4. Scikit-Learn: Python library for machine learning, used to build and train the house price prediction model.
+5. Streamlit: Used as a temporary deployment measure
 
 ### Project Structure:
 - index.html: HTML file for the user interface.
@@ -15,6 +16,7 @@ This project implements a machine learning model for predicting house prices bas
 - util.py: Module containing utility functions for loading the machine learning model and making predictions.
 - model.pkl: Serialized machine learning model file.
 - columns.json: JSON file containing the data columns used by the model.
+- app.py: Main streamlit app fiile for the user interface and experience
 
 ## Getting Started
 ### How to Use:
